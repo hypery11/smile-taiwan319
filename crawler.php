@@ -25,9 +25,9 @@ flush();
 $url='http://www.319.com.tw/store/show/';
 
 $arr=explode("\n",strip_tags(file_get_contents($url.$num)));
-echo $num."  =  ".trim($arr[228])."<br>";
+echo $num."  =  ".trim($arr[228])."\n";
 
-if(trim($arr[219])!="")
+if(trim($arr[228])!="")
 	{
 		$name=trim($arr[228]);
 		$clas=trim($arr[254]);
